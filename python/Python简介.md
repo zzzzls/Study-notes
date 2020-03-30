@@ -1,7 +1,7 @@
 - [Python概述](#Python概述)
   * [发展历程](#发展历程)
   * [Python语言的优势](#Python语言的优势)
-  * [The Zen of Python](#thezenofpython)
+  * [The Zen of Python](#the-zen-of-python)
 - [环境搭建](#环境搭建)
   * [基本环境搭建](#基本环境搭建)
   * [集成环境搭建](#集成环境搭建)
