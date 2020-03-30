@@ -1,5 +1,9 @@
 # :pushpin: Python笔记
 
+### :zero: 简介
+
+- [Python 简介][python@0]
+
 ### :one: 基础介绍
 
 - [Python命令参数 -b -c -i -V][python@1]
@@ -28,7 +32,7 @@
 - [常用内置函数][python@15]
 
 
-
+[python@0]:./Python简介.md
 [python@1]:./Python%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0%20-b%20-c%20-i%20-V.md
 [python@2]:./Python%E8%BF%90%E7%AE%97%E7%AC%A6.md
 [python@3]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%80%E4%BB%8B.md
