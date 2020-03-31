@@ -142,6 +142,7 @@ break               for                 not
 Python中的每个值都有一个数据类型。  
 在 Python编程中，**一切（万物）皆对象** ，数据类型实际上是类，变量是这些类的实例（对象）。
 
+![数据类型][数据类型]
 
 ### 基础数据类型
 
@@ -259,3 +260,5 @@ Python中的每个值都有一个数据类型。
 |  tuple 元组  |              `tuple(other)`              |
 |   set 集合   |               `set(other)`               |
 |  dict 字典   |              `dict(other)`               |
+
+[数据类型]:https://raw.githubusercontent.com/zzzzls/Images/master/Study_nodes_img/03-31_01.png
