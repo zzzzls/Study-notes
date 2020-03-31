@@ -6,14 +6,15 @@
 
 ### :one: 基础介绍
 
-- [Python命令参数 -b -c -i -V][python@1]
-- [Python运算符][python@2]
+- [Python 基础语法][python@0.1]
+- [Python 运算符][python@2]
+- [Python 命令参数 -b -c -i -V][python@1]
   
 ### :two: 字符串
 
-- [Python字符串简介][python@3]
-- [Python字符串切片][python@4]
-- [Python字符串常用函数][python@5]
+- [字符串简介][python@3]
+- [字符串切片][python@4]
+- [字符串常用函数][python@5]
 - [translate & maketrans 方法详解][python@6]
   
 ### :three: 数据类型
@@ -33,6 +34,7 @@
 
 
 [python@0]:./Python简介.md
+[python@0.1]:./Python基础语法.md
 [python@1]:./Python%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0%20-b%20-c%20-i%20-V.md
 [python@2]:./Python%E8%BF%90%E7%AE%97%E7%AC%A6.md
 [python@3]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%80%E4%BB%8B.md
