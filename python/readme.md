@@ -9,7 +9,6 @@
 - [Python 基础语法][python@0.1]
 - [Python 运算符][python@2]
 - [Python 程序结构][python@2.1]
-- [Python 列表简介][python@2.2]
 - [Python 命令参数 -b -c -i -V][python@1]
   
 ### :two: 字符串
@@ -18,15 +17,24 @@
 - [字符串切片][python@4]
 - [字符串常用函数][python@5]
 - [translate & maketrans 方法详解][python@6]
-  
-### :three: 数据类型
 
-- [列表list][python@7]
+### :three: 列表 list
+
+- [Python 列表简介][python@2.2]
+- [列表函数简介][python@7]
 - [列表解析式][python@8]
-- [字典dict][python@9]
-- [集合set][python@10]
+
+### :four: 元组 tuple
+
+### :five: 集合 set
+
+- [集合函数简介][python@10]
+
+### :six: 字典 dict
+
+- [字典函数简介][python@9]
   
-### :four: 函数
+### :seven: 函数
 
 - [函数简介][python@11]
 - [函数的高级用法][python@12]
