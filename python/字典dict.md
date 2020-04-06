@@ -1,11 +1,30 @@
-# 字典内置函数
+<!-- TOC -->
+
+- [python内置函数](#python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0)
+- [字典内置函数](#%E5%AD%97%E5%85%B8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0)
+    - [clear()](#clear)
+    - [copy()](#copy)
+    - [fromkeys()](#fromkeys)
+    - [get()](#get)
+    - [setdefault()](#setdefault)
+    - [items()](#items)
+    - [pop()](#pop)
+    - [popitem()](#popitem)
+    - [update()](#update)
+    - [keys()](#keys)
+    - [values()](#values)
+
+<!-- /TOC -->
+
+# python内置函数
 |函数| 描述 |
 |--|--|
 | len(dict) | 计算字典元素个数，即键的总数|
 | str(dict)  | 将字典转换为字符串  |
 
-# 字典内置方法
-### clear()
+# 字典内置函数
+
+## clear()
 - 描述  
 	删除字典内所有元素
 	
@@ -25,7 +44,7 @@
 	>>>{}
 	```
 
-### copy()
+## copy()
 - 描述  
 	返回一个字典的浅拷贝
 	
@@ -46,7 +65,7 @@
 	>>>{"name":"zong","age":18}
 	```
 
-### fromkeys()
+## fromkeys()
 - 描述  
 	创建一个新字典，以序列 seq 中元素做字典的键，value 为字典所有键对应的初始值
 	
@@ -68,7 +87,7 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	>>>{'name': None, 'age': None, 'sex': None}
 	```
 	
-### get()
+## get()
 - 描述  
 	返回指定键的值，如果键不在字典中返回默认值
 	
@@ -92,7 +111,8 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	>>>None
 	>>>空
 	```
-### setdefault()
+
+## setdefault()
 - 描述  
 	返回指定键的值，如果键不在字典中则插入并返回默认值
 	
@@ -120,7 +140,8 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	>>>"男"
 	{'name': 'zong', 'age': 18, 'sex': '男'}
 	```
-### items()
+
+## items()
 - 描述  
 	以列表返回可遍历的(键, 值) 元组数组
 	
@@ -139,7 +160,8 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	print(dct.items())
 	>>>dict_items([('name', 'zong'), ('age', 18)])
 	```
-### pop()
+
+## pop()
 - 描述  
 	删除字典给定键 key 所对应的值，返回值为被删除的值。如果给定键值不存在，返回 default 值
 	
@@ -162,9 +184,10 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	>>>18
 	>>>空
 	```
-### popitem()
+
+## popitem()
 - 描述  
-	删除并返回 字典中的最后一对键和值
+	删除并返回 字典中的随机一对键和值
 	
 - 语法  
 	`dict.popitem()`
@@ -181,7 +204,8 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	print(dct.popitem())
 	>>>('age', 18)
 	```
-### update()
+
+## update()
 - 描述  
 	把字典参数 dict2 的 key/value(键/值) 对更新到字典 dict 里
 	
@@ -202,7 +226,8 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	print(dct)
 	>>>{'name': 'zong', 'age': 18, 'sex': '男'}
 	```
-### keys()
+
+## keys()
 - 描述  
 	返回字典中键对应的列表
 	
@@ -221,7 +246,8 @@ value -- 可选参数, 设置键序列（seq）对应的值，默认为 None。
 	print(dct.keys())
 	>>>dict_keys(['name', 'age'])
 	```
-### values()
+
+## values()
 - 描述  
 	返回字典中值对应的列表
 	
