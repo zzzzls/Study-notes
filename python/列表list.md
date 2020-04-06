@@ -1,14 +1,38 @@
+<!-- TOC -->
+
+- [python内置函数](#python%e5%86%85%e7%bd%ae%e5%87%bd%e6%95%b0)
+- [列表常用方法](#%e5%88%97%e8%a1%a8%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95)
+	- [增加数据](#%e5%a2%9e%e5%8a%a0%e6%95%b0%e6%8d%ae)
+		- [append()](#append)
+		- [insert()](#insert)
+		- [extend()](#extend)
+	- [删除数据](#%e5%88%a0%e9%99%a4%e6%95%b0%e6%8d%ae)
+		- [remove()](#remove)
+		- [pop()](#pop)
+		- [clear()](#clear)
+	- [其它操作](#%e5%85%b6%e5%ae%83%e6%93%8d%e4%bd%9c)
+		- [reverse()](#reverse)
+		- [sort()](#sort)
+		- [copy()](#copy)
+		- [count()](#count)
+		- [index()](#index)
+
+<!-- /TOC -->
+
 # python内置函数
-|函数| 说明 |
-|--|--|
-| [len(list)](https://www.runoob.com/python3/python3-att-list-len.html) | 列表元素个数 |
-|  [max(list)](https://www.runoob.com/python3/python3-att-list-max.html) |  返回列表元素的最大值 |
-| [min(list)](https://www.runoob.com/python3/python3-att-list-min.html)  | 返回列表元素的最小值  |
-|  [list(object)](https://www.runoob.com/python3/python3-att-list-list.html) | 将其他可迭代数据转换为列表类型  |
+| 函数                                                                      | 说明                           |
+| ------------------------------------------------------------------------- | ------------------------------ |
+| [len(list)](https://www.runoob.com/python3/python3-att-list-len.html)     | 列表元素个数                   |
+| [max(list)](https://www.runoob.com/python3/python3-att-list-max.html)     | 返回列表元素的最大值           |
+| [min(list)](https://www.runoob.com/python3/python3-att-list-min.html)     | 返回列表元素的最小值           |
+| [list(object)](https://www.runoob.com/python3/python3-att-list-list.html) | 将其他可迭代数据转换为列表类型 |
 
 # 列表常用方法
 
+## 增加数据
+
 ### append()
+
 - 描述  
 	用于在列表末尾添加新的对象
 	
@@ -20,14 +44,17 @@ obj -- 添加到列表末尾的对象
 
 - 返回值  
 	\\
-- 实例  
+- 实例 
+
 	```python
 	lst = ["python","java","c"]
 	lst.append("javascript")
 	print(lst)
 	>>>["python","java","c","javascript"]
 	```
+
 ### insert()
+
 - 描述  
 	将指定对象插入列表的指定位置
 	
@@ -67,6 +94,8 @@ obj -- 添加到列表末尾的对象
 	print(lst1)
 	>>>["python","java","c",1,2,3,4,5]
 	```
+
+## 删除数据
 
 ### remove()
 - 描述  
@@ -130,7 +159,9 @@ obj -- 添加到列表末尾的对象
 	print(lst)
 	>>>[]
 	```
-	
+
+## 其它操作	
+
 ### reverse()
 - 描述  
 	反向列表中元素
@@ -192,6 +223,7 @@ obj -- 添加到列表末尾的对象
 	print(lst2)
 	>>>[1,2,3]
 	```
+
 ### count()
 - 描述  
 	统计某个元素在列表中出现的次数
@@ -211,6 +243,7 @@ obj -- 添加到列表末尾的对象
 	print(count)
 	>>>3
 	```
+
 ### index()
 - 描述  
 	从列表中找出某个值第一个匹配项的索引位置
