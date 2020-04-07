@@ -14,6 +14,7 @@
   
 ### :two: 字符串
 
+- [字符串底层原理][python@3.0]
 - [字符串简介][python@3]
 - [字符串切片][python@4]
 - [字符串常用函数][python@5]
@@ -51,6 +52,7 @@
 [python@2.1]:./Python程序结构.md
 [python@2.2]:./列表简介.md
 [python@2.3]:./python程序内存分析.md
+[python@3.0]:./Python字符串底层原理.md
 [python@3]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%80%E4%BB%8B.md
 [python@4]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%87%E7%89%87.md
 [python@5]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0.md
