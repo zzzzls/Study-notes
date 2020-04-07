@@ -9,6 +9,7 @@
 - [Python 基础语法][python@0.1]
 - [Python 运算符][python@2]
 - [Python 程序结构][python@2.1]
+- [Python 程序内存分析][python@2.3]
 - [Python 命令参数 -b -c -i -V][python@1]
   
 ### :two: 字符串
@@ -49,6 +50,7 @@
 [python@2]:./Python%E8%BF%90%E7%AE%97%E7%AC%A6.md
 [python@2.1]:./Python程序结构.md
 [python@2.2]:./列表简介.md
+[python@2.3]:./python程序内存分析.md
 [python@3]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%80%E4%BB%8B.md
 [python@4]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%87%E7%89%87.md
 [python@5]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0.md
