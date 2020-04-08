@@ -24,6 +24,7 @@
 
 - [Python 列表简介][python@2.2]
 - [列表函数简介][python@7]
+- [列表中插入另一个列表中的元素][python@8.0]
 - [列表解析式][python@8]
 
 ### :four: 元组 tuple
@@ -59,6 +60,7 @@
 [python@5]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0.md
 [python@6]:./translate%20%26%20maketrans%20%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3.md
 [python@7]:./%E5%88%97%E8%A1%A8list.md
+[python@8.0]:./列表中插入另一个列表中的元素.md
 [python@8]:./%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%BC%8F.md
 [python@9]:./%E5%AD%97%E5%85%B8dict.md
 [python@10]:./%E9%9B%86%E5%90%88set.md
