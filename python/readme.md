@@ -50,6 +50,7 @@
 ### :eight: 模块和包
 
 - [Python中的模块][python@16]
+- [Python中的包][python@16.1]
 
 [python@0]:./Python简介.md
 [python@0.1]:./Python基础语法.md
@@ -76,3 +77,4 @@
 [python@14]:./%E8%A3%85%E9%A5%B0%E5%99%A8%E8%AF%A6%E8%A7%A3.md
 [python@15]:./常用内置函数.md
 [python@16]:./python中的模块.md
+[python@16.1]:./python中的包.md
