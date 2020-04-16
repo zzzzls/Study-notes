@@ -54,6 +54,8 @@
 
 ### :nine: 面向对象
 - [面向对象入门][python@17]
+- [面向对象 - 封装][python@17.1]
+- [面向对象 - 继承][python@17.2]
 
 
 [python@0]:./Python简介.md
@@ -83,3 +85,5 @@
 [python@16]:./python中的模块.md
 [python@16.1]:./python中的包.md
 [python@17]:./面向对象入门.md
+[python@17.1]:./三大特征-封装.md
+[python@17.2]:./三大特征-继承.md
