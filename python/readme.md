@@ -17,6 +17,7 @@
 - [字符串底层原理][python@3.0]
 - [字符串简介][python@3]
 - [字符串切片][python@4]
+- [字符串格式化][python@4.1]
 - [字符串常用函数][python@5]
 - [translate & maketrans 方法详解][python@6]
 
@@ -68,6 +69,7 @@
 [python@3.0]:./Python字符串底层原理.md
 [python@3]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%80%E4%BB%8B.md
 [python@4]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%87%E7%89%87.md
+[python@4.1]:./字符串格式化.md
 [python@5]:./Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0.md
 [python@6]:./translate%20%26%20maketrans%20%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3.md
 [python@7]:./%E5%88%97%E8%A1%A8list.md
