@@ -1,9 +1,9 @@
 # Welcome
 
-## :jack_o_lantern: [Python]
+## :jack_o_lantern: Python
 
-### [Python基础][python]
-### [PyGame]
+- ### [Python基础][python]
+- ### [PyGame]
 
 ## :ghost: [Spider][Spider]
 
