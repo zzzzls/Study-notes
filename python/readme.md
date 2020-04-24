@@ -53,6 +53,7 @@
 - [Python中的模块][python@16]
 - [Python中的包][python@16.1]
 - [python中常见的文件IO操作][python@16.2]
+- [Python中的异常处理][python@16.3]
 
 ### :nine: 面向对象
 - [面向对象入门][python@17]
@@ -90,6 +91,7 @@
 [python@16]:./python中的模块.md
 [python@16.1]:./python中的包.md
 [python@16.2]:./文件IO.md
+[python@16.3]:./异常处理.md
 [python@17]:./面向对象入门.md
 [python@17.1]:./三大特征-封装.md
 [python@17.2]:./三大特征-继承.md
