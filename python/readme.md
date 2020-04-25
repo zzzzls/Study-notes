@@ -66,7 +66,8 @@
 ### :keycap_ten: 进程和线程
 
 - [多任务概述][python@18]
-- [多线程][python@18.1]
+- [多线程概述][python@18.1]
+- [Python 实现多线程][python@18.2]
 
 
 
@@ -105,4 +106,5 @@
 [python@17.3]:./三大特征-多态.md
 [python@17.4]:./面向对象进阶.md
 [python@18]:./多任务概述.md
-[python@18.1]:./多线程.md
+[python@18.1]:./多线程概述.md
+[python@18.2]:./python实现多线程.md
