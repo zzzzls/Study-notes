@@ -17,6 +17,7 @@
 - [csv模块](#csv%e6%a8%a1%e5%9d%97)
   - [存储数据到csv文件](#%e5%ad%98%e5%82%a8%e6%95%b0%e6%8d%ae%e5%88%b0csv%e6%96%87%e4%bb%b6)
   - [读取csv文件中的数据](#%e8%af%bb%e5%8f%96csv%e6%96%87%e4%bb%b6%e4%b8%ad%e7%9a%84%e6%95%b0%e6%8d%ae)
+  - [with 语句](#with-%e8%af%ad%e5%8f%a5)
 
 <!-- /TOC -->
 
@@ -130,8 +131,11 @@ def file_copy(old_path, new_path):
             print("读取完毕！")
             break
         # 写入新文件
+        # 虽然上边使用 wb 覆盖写入的方式,由于此处 new_file 文件对象未关闭,所以仍是追加写入!
         new_file.write(content)
     print("复制完成！")
+    old_file.close()
+    new_file.close()
 
 file_copy(原文件，拷贝到的位置)
 ```
@@ -273,3 +277,21 @@ for row in reader:
 
 file.close()
 ```
+
+## with 语句
+
+当我们写文件时，操作系统往往不会立刻把数据写入磁盘，而是放到内存缓存起来，空闲的时候在慢慢写入。只有在调用 close() 方法时，操作系统才保证**把没有写入的数据全部写入磁盘，同时释放资源**。忘记调用 close 的后果时数据可能只写了一部分到磁盘，剩下的丢失了。
+
+有时，我们使用 open() 函数打开文件，如果出现异常，如读取过程中文件不存在，此时程序中断，尚未执行到 close() 方法，文件对象同样无法关闭！
+
+此时，我们可以考虑使用 with语句来打开文件，具体语法格式如下：
+
+```python
+with open("cs.txt","w",encoding="utf-8") as f:
+    content = f.read()
+
+print(content)
+```
+
+使用 with 语句的好处，就是到达语句末尾时，即便出现异常，也会自动关闭文件，可以确保文件一定会被关闭！
+
