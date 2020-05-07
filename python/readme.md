@@ -21,24 +21,26 @@
 - [字符串常用函数][python@5]
 - [translate & maketrans 方法详解][python@6]
 
-### :three: 列表 list
+### :three: 组合数据类型
 
+- #### 列表
+  
 - [Python 列表简介][python@2.2]
 - [列表函数简介][python@7]
 - [列表中插入另一个列表中的元素][python@8.0]
 - [列表解析式][python@8]
-
-### :four: 元组 tuple
-
-### :five: 集合 set
-
-- [集合函数简介][python@10]
-
-### :six: 字典 dict
-
-- [字典函数简介][python@9]
   
-### :seven: 函数
+- #### 元组
+
+- #### 集合
+  
+- [集合函数简介][python@10]
+  
+- #### 字典
+  
+- [字典函数简介][python@9]
+
+### :four: 函数
 
 - [函数简介][python@11.0]
 - [函数的参数及返回值][python@11]
@@ -48,15 +50,18 @@
 - [装饰器详解][python@14]
 - [常用内置函数][python@15]
 
-### :eight: 模块和包
+### :five: 模块和包
 
 - [Python中的模块][python@16]
 - [Python中的包][python@16.1]
-- [python中常见的文件IO操作][python@16.2]
-- [Python中的异常处理][python@16.3]
+  
+### :six: 常用模块
+
+- [python 文件IO][python@16.2]
+- [Python 异常处理][python@16.3]
 - [Python 正则表达式][python@16.4]
 
-### :nine: 面向对象
+### :six: 面向对象
 
 - [面向对象入门][python@17]
 - [面向对象 - 封装][python@17.1]
@@ -64,7 +69,7 @@
 - [面向对象 - 多态][python@17.3]
 - [面向对象进阶][python@17.4]
 
-### :keycap_ten: 进程和线程
+### :seven: 进程和线程
 
 - [多任务概述][python@18]
 - [多线程概述][python@18.1]
