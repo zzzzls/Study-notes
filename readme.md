@@ -25,6 +25,6 @@
 [PyGame]:./PyGame/readme.md
 [linux]:./CentOS/readme.md
 [shell]:./Shell脚本/readme.md
-[MySQL]:./MySQL/Mysql常用命令.md
+[MySQL]:./MySQL/readme.md
 
 
