@@ -65,6 +65,16 @@
 - [多线程概述][python@18.1]
 - [Python 实现多线程][python@18.2]
 
+### :eight: Linux
+
+- [CentOS 7][linux]
+
+- [Shell script][shell]
+
+### :nine: 数据库
+
+- [MySQL][MySQL]
+
 
 
 [python@0]:./Python简介.md
@@ -105,3 +115,7 @@
 [python@18]:./多任务概述.md
 [python@18.1]:./多线程概述.md
 [python@18.2]:./python实现多线程.md
+
+[linux]:./CentOS/readme.md
+[shell]:./Shell脚本/readme.md
+[MySQL]:./MySQL/readme.md
