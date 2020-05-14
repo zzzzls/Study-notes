@@ -8,6 +8,9 @@
 - [CSS 间距][@0.4]
 - [CSS display][@0.5]
 - [CSS overflow & float & 定位][@0.6]
+- [JavaScript 初识][@0.7]
+- [JavaScript 基本使用][@0.8]
+- [JavaScript 流程控制 & 函数 & 对象][@0.9]
 
 
 [@0.1]:./HTML常见标签.md
@@ -16,6 +19,9 @@
 [@0.4]:./CSS间距.md
 [@0.5]:./CSSdisplay.md
 [@0.6]:./CSS定位.md
+[@0.7]:./JavaScript初识.md
+[@0.8]:./JavaScript基本使用.md
+[@0.9]:./流程控制&函数&对象.md
 
 
 
