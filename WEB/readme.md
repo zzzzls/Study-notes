@@ -11,6 +11,7 @@
 - [JavaScript 初识][@0.7]
 - [JavaScript 基本使用][@0.8]
 - [JavaScript 流程控制 & 函数 & 对象][@0.9]
+- [JavaScript DOM][@1.0]
 
 
 [@0.1]:./HTML常见标签.md
@@ -22,6 +23,7 @@
 [@0.7]:./JavaScript初识.md
 [@0.8]:./JavaScript基本使用.md
 [@0.9]:./流程控制&函数&对象.md
+[@1.0]:./JavaScriptDOM.md
 
 
 
