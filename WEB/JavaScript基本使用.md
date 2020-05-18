@@ -12,6 +12,12 @@
   - [逻辑运算符](#%e9%80%bb%e8%be%91%e8%bf%90%e7%ae%97%e7%ac%a6)
   - [三目运算符](#%e4%b8%89%e7%9b%ae%e8%bf%90%e7%ae%97%e7%ac%a6)
   - [void运算符](#void%e8%bf%90%e7%ae%97%e7%ac%a6)
+- [定时器](#%e5%ae%9a%e6%97%b6%e5%99%a8)
+  - [setInterval()](#setinterval)
+  - [setTimeout()](#settimeout)
+- [Json](#json)
+- [异常](#%e5%bc%82%e5%b8%b8)
+- [re](#re)
 
 <!-- /TOC -->
 
@@ -159,6 +165,144 @@ void运算符可用于返回 `undefined` ，例如：
 
 因此，我们可以使用 `href="javascript:void(0)"` 的方式，确保点击它会执行一个纯粹无聊的 `void(0)`
 
+## 定时器
+
+### setInterval()
+
+**间隔指定的毫秒数不停地执行指定的代码**
+
+```javascript
+//          执行的函数     毫秒
+var timer = setInterval(function(){},1000);
+
+// 停止
+clearInterval(timer)
+```
+
+### setTimeout()
+
+**在指定的毫秒数后指定指定代码**
+
+```javascript
+var timer = setTimeout(function(){},2000);
+
+// 停止
+clearTimeout(timer);
+```
+
+## Json
+
+(1) **JSON.parse()**
+
+将一个字符串转换为 JSON
+
+```javascript
+JSON.parse(text[, reviver])
+
+// text 一个有效的json字符串
+// reviver 可选 一个转换结果函数,将为对象每个成员调用此函数
+```
+
+(2) **JSON.stringify()**
+
+将 Json 转换为 字符串
+
+```javascript
+JSON.stringify(value[, replacer[, space]])
+
+// value 要转换的 json 值
+// replacer 可选。用于转换结果的函数或数组
+// 可选 文本添加缩进,空格和换行符
+```
+
+## 异常
+
+try 语句测试代码块的错误。
+catch 语句处理错误。
+throw 语句创建自定义错误。
+finally 语句在 try 和 catch 语句之后，无论是否有触发异常，该语句都会执行。
+
+**try语句**
+
+```javascript
+try {
+    ...
+} catch(e) {
+    ...
+} finally {
+    ...
+}
+```
+
+**throw语句**
+
+`throw exception`
+
+抛出的内容可以是 JavaScript 字符串、数字、逻辑值或对象
+
+```javascript
+try{
+  if(x == "")  throw "值为空";
+  if(isNaN(x)) throw "不是数字";
+  if(x < 5)    throw "太小";
+  if(x > 10)   throw "太大";
+}catch(err) {
+  message.innerHTML = "错误: " + err;
+}
+```
+
+## re
+
+**(1) RegExp 修饰符**
+
+修饰符用于执行不区分大小写和全文的搜索。
+
+i - 修饰符是用来执行不区分大小写的匹配。
+
+g - 修饰符是用于执行全文的搜索（而不是在找到第一个就停止查找,而是找到所有的匹配）
+
+m - 执行多行匹配
 
 
+```javascript
 
+// 正则表达式
+var reg = /^1[0-9]{10}$/;
+
+// 带修饰符的正则表达式
+var reg = /^1[0-9]{10}$/g;
+```
+
+**(2) test()**
+
+搜索字符串的值，根据结果返回 true 或者 false
+
+```javascript
+
+// 判断字符串中是否包含 python 字符
+var str = "hello python";
+var reg = /python/;
+
+console.log(reg.test(str));
+```
+
+**(3) exec()**
+
+检索字符串中的指定值，返回被找到的值，如果没有无匹配，返回 null
+
+```javascript
+// 提取字符串中的 数字
+var str = "please call 110";
+var reg = /\d{3}/;
+
+console.log(reg.exec(str));
+```
+
+**(4) 支持正则表达式的 String 对象 的方法**
+
+|方法|描述|
+|:---|:---|
+|search()|检索于正则表达式相匹配的值|
+|match()|找到一个或多个正则表达式的匹配|
+|replace()|替换匹配正则表达式的子串|
+|split()|把字符串分割为字符串数组|
