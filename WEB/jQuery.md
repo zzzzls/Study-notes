@@ -317,7 +317,7 @@ $("p").click(function(){
 ## 淡入淡出
 
 - `fadeIn(spead,callback)`  淡入元素
-- `fadeOn(spead,callback)`  淡出元素
+- `fadeOut(spead,callback)`  淡出元素
 - `fadeToggle(spead,callback)` 切换淡入淡出
 
   可选的 speed 参数规定效果的时长，它可以取以下值：**slow**、**fast** 或 **毫秒**  
@@ -328,7 +328,7 @@ $("p").click(function(){
   ```javascript
   $("#outter").fadeIn("3000");
 
-  $("#outter").fadeOn("slow");
+  $("#outter").fadeOut("slow");
   ```
 
 - `fadeTo(speed,opacity,callback)`  渐变元素透明度
