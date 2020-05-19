@@ -320,8 +320,8 @@ $("p").click(function(){
 - `fadeOn(spead,callback)`  淡出元素
 - `fadeToggle(spead,callback)` 切换淡入淡出
 
-  可选的 speed 参数规定效果的时长，它可以取以下值：**slow**、**fast** 或 **毫秒**
-  可选的 callback 参数是动画完成后所执行的函数名称
+  可选的 speed 参数规定效果的时长，它可以取以下值：**slow**、**fast** 或 **毫秒**  
+  可选的 callback 参数是动画完成后所执行的函数名称  
   
   <br>
 
@@ -343,8 +343,8 @@ $("p").click(function(){
 - `slideUp(speed,callback)`  向上滑动元素
 - `slideToggle(speed,callback)`  切换滑动状态
   <br>
-  可选的 speed 参数规定效果的时长，它可以取以下值：**slow**、**fast** 或 **毫秒**
-  可选的 callback 参数是动画完成后所执行的函数名称
+  可选的 speed 参数规定效果的时长，它可以取以下值：**slow**、**fast** 或 **毫秒**  
+  可选的 callback 参数是动画完成后所执行的函数名称  
 
 ```javascript
 $(".inner").slideToggle("2000");
