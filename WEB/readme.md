@@ -13,6 +13,7 @@
 - [JavaScript 流程控制 & 函数 & 对象][@0.9]
 - [JavaScript DOM][@1.0]
 - [jQuery][@1.1]
+- [Bootstarp][@1.2]
 
 
 [@0.1]:./HTML常见标签.md
@@ -26,6 +27,7 @@
 [@0.9]:./流程控制&函数&对象.md
 [@1.0]:./JavaScriptDOM.md
 [@1.1]:./jQuery.md
+[@1.2]:./Bootstrap.md
 
 
 
