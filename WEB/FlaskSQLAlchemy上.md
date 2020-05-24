@@ -124,3 +124,6 @@ db.create_all()
 ```
 
 > 如果写在python文件中创建，创建完毕后，需要注释该行创建语句
+
+
+[img@1]:https://raw.githubusercontent.com/zzzzls/Images/master/Study_nodes_img/flask/05-24_01.png
