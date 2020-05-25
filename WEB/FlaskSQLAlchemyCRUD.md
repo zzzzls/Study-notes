@@ -15,6 +15,7 @@
     - [聚合函数](#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0)
     - [分组](#%E5%88%86%E7%BB%84)
     - [逻辑关系](#%E9%80%BB%E8%BE%91%E5%85%B3%E7%B3%BB)
+- [参考](#%E5%8F%82%E8%80%83)
 
 <!-- /TOC -->
 
@@ -180,6 +181,22 @@ data = User.query.offset(2).all()
 data = User.query.offset(2).limit(3).all()
 ```
 
+**paginate**
+
+```python
+# 分页查询, 每页3个, 查询第2页的数据
+pn = User.query.paginate(2, 3)
+
+# 获取该页的数据
+pn.items
+
+# 获取当前的页码 
+pn.page
+
+# 获取总页数
+pn.pages  
+```
+
 ### 聚合函数
 
 ```python
@@ -221,3 +238,11 @@ Users.query.fitler(or_(Users.age > 16,Users.score > 60)).all()
 Users.query.filter(Users.age != 18).all()
 Users.query.filter(not_(Users.age == 18)).all()
 ```
+
+## 参考
+
+- [https://juejin.im/post/5bf741886fb9a049fa0f671e](https://juejin.im/post/5bf741886fb9a049fa0f671e)
+
+- [https://blog.csdn.net/qq_35430000/article/details/86361721](https://blog.csdn.net/qq_35430000/article/details/86361721)
+
+- [https://www.jianshu.com/p/8d085e2f2657](https://www.jianshu.com/p/8d085e2f2657)
