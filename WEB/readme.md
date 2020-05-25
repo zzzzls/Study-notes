@@ -20,7 +20,8 @@
 - [Flask 入门][@1.0]
 - [Flask 路由][@1.1]
 - [Jinja2 模板简介][@1.2]
-- [Flask SQLAlchemy 上][@1.3]
+- [Flask SQLAlchemy 入门][@1.3]
+- [Flask SQLAlchemy CRUD][@1.4]
 
 
 
@@ -40,6 +41,7 @@
 [@1.1]:./Flask路由.md
 [@1.2]:./Jinja2模板简介.md
 [@1.3]:./FlaskSQLAlchemy上.md
+[@1.4]:./FlaskSQLAlchemyCRUD.md
 
 
 
