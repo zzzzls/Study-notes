@@ -22,6 +22,7 @@
 - [Jinja2 模板简介][@1.2]
 - [Flask SQLAlchemy 入门][@1.3]
 - [Flask SQLAlchemy CRUD][@1.4]
+- [Flask SQLAlchemy 多表关系][@1.5]
 
 
 
@@ -42,6 +43,7 @@
 [@1.2]:./Jinja2模板简介.md
 [@1.3]:./FlaskSQLAlchemy上.md
 [@1.4]:./FlaskSQLAlchemyCRUD.md
+[@1.5]:./FlaskSQLAlchemy关系.md
 
 
 
