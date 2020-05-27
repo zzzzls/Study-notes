@@ -4,6 +4,8 @@ Flask 是一个使用 Python编写的**轻量级 Web 应用框架**，只提供�
 
 其 WSGI 工具箱采用 Werkzeug，模板引擎则使用 Jinja2，Flask 使用 BSD 授权
 
+中文文档: https://dormousehole.readthedocs.io/en/latest/
+
 **安装 Flask**
 
 ```python

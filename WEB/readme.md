@@ -20,10 +20,13 @@
 - [Flask 入门][@1.0]
 - [Flask 路由][@1.1]
 - [Flask 请求 & 会话][@1.1.0]
+- [Flask 自定义装饰器][@1.1.1]
+- [Flask 配置文件][@1.1.2]
 - [Jinja2 模板简介][@1.2]
 - [Flask SQLAlchemy 入门][@1.3]
 - [Flask SQLAlchemy CRUD][@1.4]
 - [Flask SQLAlchemy 多表关系][@1.5]
+
 
 
 
@@ -42,6 +45,8 @@
 [@1.0]:./Flask入门.md
 [@1.1]:./Flask路由.md
 [@1.1.0]:./flask请求&会话.md
+[@1.1.1]:./Flask使用自定义装饰器.md
+[@1.1.2]:./Flask配置文件.md
 [@1.2]:./Jinja2模板简介.md
 [@1.3]:./FlaskSQLAlchemy上.md
 [@1.4]:./FlaskSQLAlchemyCRUD.md
