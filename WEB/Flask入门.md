@@ -1,4 +1,4 @@
-![flask](https://dormousehole.readthedocs.io/en/latest/_images/flask-logo.png)
+![flask](http://img.zzzzls.top/flask-logo.png&git)
 
 Flask 是一个使用 Python编写的**轻量级 Web 应用框架**，只提供了 **Web 框架的核心功能**，相较于其它的框架来说更加**灵活**，**自由**，更加适合开发**高度定制化**的项目。
 
