@@ -27,6 +27,7 @@
 - [Flask SQLAlchemy CRUD][@1.4]
 - [Flask SQLAlchemy 多表关系][@1.5]
 - [Flask 蓝图][@1.6]
+- [Flask Script & Migrate][@1.7]
 
 
 
@@ -53,6 +54,7 @@
 [@1.4]:./FlaskSQLAlchemyCRUD.md
 [@1.5]:./FlaskSQLAlchemy关系.md
 [@1.6]:./Flask蓝图.md
+[@1.7]:./Flask-script&Migrate.md
 
 
 
