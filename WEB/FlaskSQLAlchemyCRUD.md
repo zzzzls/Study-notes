@@ -186,16 +186,19 @@ data = User.query.offset(2).limit(3).all()
 ```python
 # 分页查询, 每页3个, 查询第2页的数据
 pn = User.query.paginate(2, 3)
-
-# 获取该页的数据
-pn.items
-
-# 获取当前的页码 
-pn.page
-
-# 获取总页数
-pn.pages  
 ```
+
+|属性|描述|
+|:---|:---|
+|pn.items|获取当前页的数据|
+|pn.pages|获取总页数|
+|pn.has_prev|是否有上一页|
+|pn.has_next|是否有下一页|
+|pn.prev_num|上一页的页码|
+|pn.page|获取当前页的页码|
+|pn.next_num|下一页的页码|
+|pn.total|数据总条数|
+|pn.iter_pages()|迭代器，提供分页的页码|
 
 ### 聚合函数
 
