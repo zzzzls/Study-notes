@@ -28,6 +28,7 @@
 - [Flask SQLAlchemy 多表关系][@1.5]
 - [Flask 蓝图][@1.6]
 - [Flask Script & Migrate][@1.7]
+- [Flask WTF][@1.8]
 
 
 
@@ -55,6 +56,7 @@
 [@1.5]:./FlaskSQLAlchemy关系.md
 [@1.6]:./Flask蓝图.md
 [@1.7]:./Flask-script&Migrate.md
+[@1.8]:./Flask-WTF.md
 
 
 
