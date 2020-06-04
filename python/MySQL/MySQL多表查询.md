@@ -1,13 +1,13 @@
 <!-- TOC -->
 
-- [多表查询](#%e5%a4%9a%e8%a1%a8%e6%9f%a5%e8%af%a2)
-  - [交叉连接](#%e4%ba%a4%e5%8f%89%e8%bf%9e%e6%8e%a5)
-    - [笛卡尔积](#%e7%ac%9b%e5%8d%a1%e5%b0%94%e7%a7%af)
-  - [内连接](#%e5%86%85%e8%bf%9e%e6%8e%a5)
-  - [外连接](#%e5%a4%96%e8%bf%9e%e6%8e%a5)
-    - [左外连接](#%e5%b7%a6%e5%a4%96%e8%bf%9e%e6%8e%a5)
-    - [右外连接](#%e5%8f%b3%e5%a4%96%e8%bf%9e%e6%8e%a5)
-  - [子查询](#%e5%ad%90%e6%9f%a5%e8%af%a2)
+- [多表查询](#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2)
+    - [交叉连接](#%E4%BA%A4%E5%8F%89%E8%BF%9E%E6%8E%A5)
+        - [笛卡尔积](#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF)
+    - [内连接](#%E5%86%85%E8%BF%9E%E6%8E%A5)
+    - [外连接](#%E5%A4%96%E8%BF%9E%E6%8E%A5)
+        - [左外连接](#%E5%B7%A6%E5%A4%96%E8%BF%9E%E6%8E%A5)
+        - [右外连接](#%E5%8F%B3%E5%A4%96%E8%BF%9E%E6%8E%A5)
+    - [子查询](#%E5%AD%90%E6%9F%A5%E8%AF%A2)
 
 <!-- /TOC -->
 
@@ -58,7 +58,7 @@ B×A={(3,1), (3,2), (4,1), (4,2), (5,1), (5,2) };
 **语法格式如下：**
 
 ```sql
-select <字段名> from <tab_name> <tab_name> inner join <tab_name> [on子句]
+select <字段名> from <tab_name> inner join <tab_name> [on子句]
 ```
 
 多个表连接时，再 from 后边连续使用 `inner join` 或 `join` 即可
@@ -91,7 +91,7 @@ select <字段名> from <tab1> left join <tab2> [on子句]
 
 上述语法中，**tab1 为基表**，**tab2 为参考表**，左连接查询时，可以查询处 tab1 中的所有记录和 tab2 中匹配连接条件的记录。如果 tab1 的某行在 tab2 中没有匹配行，那么在返回结果中，tab2 的字段值均为空值 NULL
 
-![img][img@1]
+![img][img@2]
 
 ### 右外连接
 
@@ -105,7 +105,7 @@ select <字段名> from <tab1> right outer <tab2> [on子句]
 
 与左连接相反，右连接以 tab2 为基表，tab1 为参考表，可以查询出 tab2 中所有记录和 tab1 中匹配连接条件的记录。如果 tab2 的某行在 tab1 中没有匹配项，那么在返回结果中，tab1 的字段值均为 NULL
 
-![img][img@2]
+![img][img@1]
 
 多个表 左/右 连接时，在 on 子句后连续使用 `left/right join` 即可 
 
