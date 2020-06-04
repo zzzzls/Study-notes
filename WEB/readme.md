@@ -30,6 +30,18 @@
 - [Flask Script & Migrate][@1.7]
 - [Flask WTF][@1.8]
 
+### :three: Django
+
+- [Django 简介][@2.0]
+- [Django 视图][@2.1]
+- [Django 路由][@2.2]
+- [Django 模板][@2.3]
+- [Django APP][@2.4]
+- [Django 请求][@2.5]
+- [Django 数据库配置][@2.6]
+- [Django 数据库单表操作][@2.7]
+- [Django 数据库多表操作][@2.8]
+
 
 
 
@@ -57,11 +69,14 @@
 [@1.6]:./Flask/Flask蓝图.md
 [@1.7]:./Flask/Flask-script&Migrate.md
 [@1.8]:./Flask/Flask-WTF.md
-
-
-
-
-
-
+[@2.0]:./Django/Django简介.png
+[@2.1]:./Django/Django视图.md
+[@2.2]:./Django/Django路由.md
+[@2.3]:./Django/Django模板.md
+[@2.4]:./Django/DjangoAPP.md
+[@2.5]:./Django/Django请求.md
+[@2.6]:./Django/Django数据库配置.md
+[@2.7]:./Django/Django数据库单表操作.md
+[@2.8]:./Django/Django数据库多表操作.md
 
 
