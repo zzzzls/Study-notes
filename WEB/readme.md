@@ -42,6 +42,7 @@
 - [Django 数据库单表操作][@2.7]
 - [Django 数据库多表操作][@2.8]
 - [Django 数据库补充][@2.9]
+- [Django Form表单类.md][@3.0]
 
 
 
@@ -80,5 +81,5 @@
 [@2.7]:./Django/Django数据库单表操作.md
 [@2.8]:./Django/Django数据库多表操作.md
 [@2.9]:./Django/Django数据库补充.md
-
+[@3.0]:./Django/DjangoForm表单类.md
 
