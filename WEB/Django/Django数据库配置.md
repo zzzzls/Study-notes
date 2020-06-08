@@ -7,6 +7,7 @@
 - [建模](#%E5%BB%BA%E6%A8%A1)
     - [常用字段](#%E5%B8%B8%E7%94%A8%E5%AD%97%E6%AE%B5)
     - [常用属性](#%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7)
+    - [ImageField 保存图片](#imagefield-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87)
 - [数据迁移同步](#%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%90%8C%E6%AD%A5)
 
 <!-- /TOC -->
@@ -137,6 +138,41 @@ class Person(models.Model):
 |unique|	不能重复|
 |upload_to|	指定上传的路径|
 |auto_now|	默认使用当前时间|
+
+## ImageField 保存图片
+
+(1) 安装 pillow 模块
+
+`pip install pillow`
+
+(2) settings 中增加配置
+```
+MEDIA_ROOT = os.path.join(BASE_DIR,"static")
+```
+
+(3) 定义模型，指定图片上传路径
+
+```python
+class Person(models.Model):
+
+    ...
+
+    picture = models.ImageField(upload_to="images",verbose_name="头像")
+
+    ...
+```
+
+(4) 视图保存图片
+
+```python
+def user(request):
+    picture = request.FILES.get("picture")
+    user = Person.objects.get(id=1)
+    user.picture = picture
+    user.save()
+```
+
+图片就会自动保存在 `/static/images/` 文件夹下了，数据库中存储的则是 `images/filename`
 
 # 数据迁移同步
 
