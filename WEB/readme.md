@@ -44,6 +44,7 @@
 - [Django 数据库补充][@2.9]
 - [Django Form表单类][@3.0]
 - [Django cookie & session][@3.1]
+- [前后端分离][@3.2]
 
 
 
@@ -84,3 +85,4 @@
 [@2.9]:./Django/Django数据库补充.md
 [@3.0]:./Django/DjangoForm表单类.md
 [@3.1]:./Django/Django会话.md
+[@3.2]:./Django/前后端分离.md
