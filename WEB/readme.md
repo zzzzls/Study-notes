@@ -41,6 +41,7 @@
 - [Django 数据库配置][@2.6]
 - [Django 数据库单表操作][@2.7]
 - [Django 数据库多表操作][@2.8]
+- [Django Manager管理器][@2.8.1]
 - [Django 数据库补充][@2.9]
 - [Django Form表单类][@3.0]
 - [Django cookie & session][@3.1]
@@ -87,6 +88,7 @@
 [@2.6]:./Django/Django数据库配置.md
 [@2.7]:./Django/Django数据库单表操作.md
 [@2.8]:./Django/Django数据库多表操作.md
+[@2.8.1]:./Django/DjangoManager管理器.md
 [@2.9]:./Django/Django数据库补充.md
 [@3.0]:./Django/DjangoForm表单类.md
 [@3.1]:./Django/Django会话.md
