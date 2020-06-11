@@ -183,9 +183,13 @@ def user(request):
 
 - 生成迁移文件
   `python manage.py makemigrations`
+- 迁移指定表
+  `python manage.py makemigrations 表名`
+
 
 <br>
 
 - 执行迁移文件，完成表格同步
   `python manage.py migrate`
-
+  
+  `python manage.py migrate 表名`
