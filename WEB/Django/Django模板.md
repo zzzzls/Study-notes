@@ -119,10 +119,40 @@ def index(request):
 <p>{{ dct.age | add:10 }}</p>
 ```
 
-(2) 自定义过滤器
+**(2) 自定义过滤器**
 
-...
+1. 在 app 中创建 python包，包名为 `templatetags`(固定名称)，在包中创建 `myfilter.py`(自定义名称)
+<br/>
+2. 编写过滤器
 
+```python
+from django.template import Library
+
+register = Library()
+
+@register.filter
+def encrypt_phone(phone):
+    return phone[:3] + "*"*4 + phone[-4:]
+```
+
+3. settings 中安装
+
+```python
+INSTALLED_APPS = [
+    ...
+
+    'appname.templatetags'
+]
+```
+
+4. 模板中使用
+
+```html
+{% load myfilter %}
+<h4>{{ phone | encrypt_phone}}</h4>
+```
+
+> 若 自定义过滤器未生效 可尝试重启项目
 
 ### 静态文件
 
@@ -144,7 +174,7 @@ mysite/
         nb.png
 ```
 
-**(2) 在 settings.py 中配置**
+**(2) 在 `settings.py` 中配置**
 
 在文件末尾添加配置项：
 
