@@ -48,6 +48,7 @@
 - [简单接口开发][@3.3]
 - [Vue][@3.4]
 - [Django 接口开发][@3.5]
+- [Django Rest Framework 框架][@3.6]
 
 
 
@@ -92,3 +93,4 @@
 [@3.3]:./Django/简单接口开发.md
 [@3.4]:./Django/Vue.md
 [@3.5]:./Django/Django接口开发.md
+[@3.6]:./Django/DjangoRestFramework.md
