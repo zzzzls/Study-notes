@@ -49,6 +49,7 @@
 - [Vue][@3.4]
 - [Django 接口开发][@3.5]
 - [Django Rest Framework 框架][@3.6]
+- [Django 子路由、子模板、子静态][@3.7]
 
 
 
@@ -94,3 +95,4 @@
 [@3.4]:./Django/Vue.md
 [@3.5]:./Django/Django接口开发.md
 [@3.6]:./Django/DjangoRestFramework.md
+[@3.7]:./Django/Django子路由,子模板,子静态.md
