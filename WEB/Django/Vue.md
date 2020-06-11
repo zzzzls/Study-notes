@@ -1,3 +1,14 @@
+<!-- TOC -->
+
+- [Vue](#vue)
+- [基本使用](#基本使用)
+- [插值操作](#插值操作)
+- [指令](#指令)
+- [ajax 请求](#ajax-请求)
+- [more](#more)
+
+<!-- /TOC -->
+
 # Vue
 
 前后端分离，将绑定数据，页面的工作交给了前端，但是前端使用 js 或者 JQuery 完成数据绑定渲染相当繁琐，于是出现了 Vue 前端框架
@@ -157,6 +168,49 @@ new Vue({
     })
 </script>
 ```
+
+# ajax 请求
+
+Vue 要实现异步加载需要使用到 `vue-resource` 库
+
+导入
+`<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>`
+
+基本使用
+
+```html
+<script>
+    new Vue({
+        el: "#box",
+        data: {
+            name: "",
+            age: ""
+        },
+        // 初始化函数
+        created:function(){
+            // 发送请求 获取数据 数据绑定
+            url = "/teacher/1/";
+            // 发送 get 请求，then 为请求之后执行的代码
+            this.$http.get(url).then(
+                // 请求成功之后执行，类似 ajax 中的 success
+                function(data){
+                    // 数据绑定
+                    this.name = data.body.username;
+                    this.age = data.body.age;
+                },
+                // 请求失败之后执行，类似 ajax 中的 error
+                function(error){
+                    console.log(error);
+                }
+            )
+        }
+    })
+</script>
+```
+
+> 由于 Django 模板语法 与 Vue 插值语法 类似，因此需要使用 
+> {% verbatim %} ... {% endverbatim %}
+> 将 Vue 代码包围起来，否则 Vue 代码可能不生效
 
 # more
 
