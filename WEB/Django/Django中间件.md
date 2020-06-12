@@ -33,7 +33,7 @@ MIDDLEWARE = [
 
 # 中间件的使用
 
-(1) 在 app 中创建 `middleware.py` 文件
+(1) 在 app 中创建 `middleware.py` 文件  
 (2) 编写中间件
 
 ```python
