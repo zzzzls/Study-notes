@@ -51,7 +51,7 @@
 - [Django 接口开发][@3.5]
 - [Django Rest Framework 框架][@3.6]
 - [Django 子路由、子模板、子静态][@3.7]
-- [Djangp 中间件][@3.8]
+- [Django 中间件][@3.8]
 
 
 
