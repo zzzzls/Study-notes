@@ -54,9 +54,9 @@
 - [Django 中间件][@3.8]
 - [Django 缓存][@3.9]
 
-### :four: Torando
+### :four: Tornado
 
-- [Torando 初识][@5.0]
+- [Tornado 初识][@5.0]
 
 
 
