@@ -16,6 +16,8 @@
 
 Tornado 是一个Python web框架和异步网络库，通过使用非阻塞网络I/O, Tornado 可以支持上万级的连接，处理 长连接, WebSockets, 和其他 需要与每个用户保持长久连接的应用
 
+参考文档: [Tornado Web Server — Tornado 4.3 文档](https://tornado-zh.readthedocs.io/zh/latest/index.html)
+
 Tornado 大体上可以分为 4 个主要的部分
 
 1. web 框架（ 包括创建 web 应用的 `RequestHandler` 类等）
