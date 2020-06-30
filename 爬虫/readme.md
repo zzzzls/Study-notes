@@ -29,6 +29,10 @@
   - XML
   - lxml
   - XPath
+- Days06
+  - 案例: 扇贝单词
+  - 案例: 网易云歌手
+  - 案例: 古诗
 
 
 [splide@1]:./Http%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md
