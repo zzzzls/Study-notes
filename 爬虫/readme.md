@@ -9,6 +9,7 @@
 
 - [图片][spidler@1.1]
 - [opml][spidler@1.2]
+- [mmap][spidler@1.3]
 
 <br/>
 
@@ -77,4 +78,5 @@
 
 [spidler@1.1]:./spider.png
 [spidler@1.2]:./Spider.opml
+[spidler@1.3]:./Spider.mmap
 
