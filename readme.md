@@ -7,7 +7,7 @@
 
 - ### :ghost: [爬虫 阶段][Spider]
 
-- ### [NEXT][next]
+- ### :cloud: [AI 阶段][AI]
 
 - ### 第三方库
 
@@ -16,6 +16,7 @@
 [python]:./python/readme.md
 [web]:./WEB/readme.md
 [Spider]:./爬虫/readme.md
+[AI]:./AI/readme.md
 [next]:./
 [PyGame]:./第三方库/PyGame/readme.md
 
