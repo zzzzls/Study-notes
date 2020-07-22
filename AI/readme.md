@@ -11,6 +11,12 @@
   - ndarray 创建特殊数组
   - ndarray 数组索引
   - ndarray 数组变换
+- Days03
+  - 数组合并 & 拆分
+  - 矩阵
+  - 数组运算
+  - 数组广播机制
+  - Numpay 文件读写
 
 ### :one: 机器学习
 
