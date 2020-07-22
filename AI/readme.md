@@ -7,6 +7,10 @@
 - Days01
   - 数学基础: 矩阵
   - Numpy ndarray
+- Days02
+  - ndarray 创建特殊数组
+  - ndarray 数组索引
+  - ndarray 数组变换
 
 ### :one: 机器学习
 
