@@ -44,6 +44,9 @@
   - agg
   - transform
   - 数据透视表
+- Days10
+  - 交叉表
+  - TGI 指数
 
 ### :one: 机器学习
 
