@@ -65,6 +65,9 @@
 - Days19
   - KNN算法
   - 案例: 电影分类
+- Days20
+  - sklearn 实现 KNN
+  - K-means算法
 
 
 ### :two: 深度学习
