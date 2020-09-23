@@ -17,7 +17,7 @@ yum install -y gcc
 ## 3. 下载源代码文件
 
 ```bash
-cd \opt
+cd /opt
 # 此处为下载 python3.7版本
 wget https://www.python.org/ftp/python/3.7.7/Python-3.7.7.tgz
 ```
