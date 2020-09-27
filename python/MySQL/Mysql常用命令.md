@@ -17,6 +17,8 @@
             - [数据类型](#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
             - [表约束](#%E8%A1%A8%E7%BA%A6%E6%9D%9F)
         - [查看表结构](#%E6%9F%A5%E7%9C%8B%E8%A1%A8%E7%BB%93%E6%9E%84)
+        - [重命名表](#重命名表)
+        - [查看表创建语句](#查看表的创建语句)
         - [备份数据表结构](#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%BB%93%E6%9E%84)
         - [清空表内容](#%E6%B8%85%E7%A9%BA%E8%A1%A8%E5%86%85%E5%AE%B9)
         - [删除表](#%E5%88%A0%E9%99%A4%E8%A1%A8)
@@ -147,6 +149,18 @@ create table student(
 
 ```sql
 desc <tab_name>;
+```
+
+### 重命名表
+
+```sql
+rename table <old_tab_name> to <new_tab_name>
+```
+
+### 查看表的创建语句
+
+```sql
+show create table <tab_name>
 ```
 
 ### 备份数据表结构
