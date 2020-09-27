@@ -115,7 +115,7 @@ create table <tab_name>(
 ############################
 
 create table student(
-    id int primary auto_increment,
+    id int primary key auto_increment,
     name varchar(20) not null,
     age int
 )
