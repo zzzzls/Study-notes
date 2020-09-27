@@ -41,6 +41,8 @@
             - [模糊查询](#%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2)
             - [排序查询](#%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2)
             - [分页查询](#%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2)
+            - [聚合函数](#聚合函数)
+            - [分组](#分组)
             - [more](#more)
 
 <!-- /TOC -->
@@ -260,7 +262,11 @@ update <tab_name> set name = replace(name, 'user_', '')
 ### DELETE语句
 
 ```sql
+-- 指定条件删除
 delete from <tab_name> where 条件
+
+-- 指定数量删除
+delete from <tab_name> limit 5
 ```
 
 ### SELECT语句
@@ -398,13 +404,78 @@ select * from student order by age,name
 limit 是一个特殊的放剪子，用于指定查询结果从哪条记录开始显示，一共显示多少条数据，第一条记录的位置是 0
 
 ```sql
-select * from <tab_name> limit 初始位置，记录数
+select * from <tab_name> limit 开始位置，查询记录数
 
-# 查询数据表中 从第 3 条记录开始的 2 行记录
+# 查询数据表中 从第 3 条记录开始的两行记录
 select * from student limit 2,2
 ```
+
+#### 聚合函数
+
+-   **count()** 计数
+
+-   **max()** / **min()** 最大值 / 最小值
+
+-   **sum()** 求和
+
+-   **avg()** 平均值
+
+>   除了 count 函数外，其余函数在计算时会自动忽略 null 值
+
+#### 分组
+
+根据给定列或者表达式的每一个不同值将表中的行分为不同的组，使组函数返回每一组的统计信息
+
+**语法：**
+
+```sql
+SELECT 字段名... FROM 表名
+	[WHERE 条件]
+	[GROUP BY 字段名]
+	[HAVING 过滤条件]
+```
+
+**注意**：
+
+-   出现在 select 子句中单独的列，必须出现在 GROUP BY 子句中作为分组列
+-   分组列可以不出现在 select 子句中
+
+
+
+##### （1） group by + group_concat()
+
+group_concat(字段名)  可以作为一个输出字段来使用
+
+表示分组之后，根据分组结果，使用 group_concat() 来放置每一组字段的值的集合
+
+
+
+![img][img@1]
+
+
+
+##### （2） group by + 聚合函数
+
+```sql
+-- 根据性别分组并统计每组人数
+SELECT gender, count(gender) FROM users GROUP BY gender;
+```
+
+
+
+##### （3） group by + having
+
+having 表达式：对分组后数据进行过滤 （where 用于对分组前数据进行过滤），只能用于 group by
+
+```sql
+-- 根据课程对所有学员进行分组, 并展示学习人数大于10的小组
+SELECT class, COUNT(class) FROM users GROUP BY class HAVING COUNT(class) > 10;
+```
+
+
 
 #### more
 
 <http://c.biancheng.net/mysql/70/>
 
+[img@1]:./image/img_1.png
