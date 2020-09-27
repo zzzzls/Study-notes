@@ -196,6 +196,9 @@ alter table <tab_name> modify <col_name> <new_col_definition>
 
 # 修改 列名 及 数据类型
 alter table <tab_name> change <old_col_name> <new_col_name> <new_col_definition>
+
+# 修改字段默认值
+alter table <tab_name> alter <col_name> set default <default_value>
 ```
 
 # 数据表中数据 CRUD
