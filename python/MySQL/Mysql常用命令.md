@@ -242,7 +242,19 @@ insert into <new_tab_name> as select * from <old_table_name>
 ### UPDATE语句
 
 ```sql
+-- 修改数据
 update <tab_name> set <col_name> = <value>,<col_name> = <value>... where 条件;
+
+-- 在原数据基础上修改数据
+-- int 类型
+update <tab_name> set age = age + 1
+
+-- varchar类型
+-- 增加 'zs' ==> 'user_zs'
+update <tab_name> set name = concat("user_", name);
+
+-- 减少 'user_zs'  ==> 'zs'
+update <tab_name> set name = replace(name, 'user_', '')
 ```
 
 ### DELETE语句
