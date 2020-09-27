@@ -19,7 +19,7 @@
         - [查看表结构](#%E6%9F%A5%E7%9C%8B%E8%A1%A8%E7%BB%93%E6%9E%84)
         - [重命名表](#重命名表)
         - [查看表创建语句](#查看表的创建语句)
-        - [备份数据表结构](#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%BB%93%E6%9E%84)
+        - [备份表](#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%BB%93%E6%9E%84)
         - [清空表内容](#%E6%B8%85%E7%A9%BA%E8%A1%A8%E5%86%85%E5%AE%B9)
         - [删除表](#%E5%88%A0%E9%99%A4%E8%A1%A8)
 - [修改表结构](#%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84)
@@ -163,10 +163,14 @@ rename table <old_tab_name> to <new_tab_name>
 show create table <tab_name>
 ```
 
-### 备份数据表结构
+### 备份数据表
 
 ```sql
-create table <new_tab_name> as select * from <old_tab_name> where 1 = 2;
+# 备份表结构
+create table <new_tab_name> select * from <old_tab_name> where 1 = 2;
+
+# 备份表内容
+create table <new_tab_name> select * from <old_tab_name>
 ```
 
 ### 清空表内容
@@ -231,7 +235,7 @@ insert into student (name,age) values ("小红",16)
 # 增加多条数据
 insert into student values (3,"tom",15),(4,"jey",19);
 
-# 备份数据到新表
+# 插入其他表数据到新表
 insert into <new_tab_name> as select * from <old_table_name>
 ```
 
