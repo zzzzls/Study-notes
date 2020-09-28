@@ -24,12 +24,12 @@
 
 有如下分类：
 
-​	**DQL**：**数据查询语言，select**
-​	**DML：数据操作语言，insert，update，delete**
-​	**DDL：数据定义语言，进行数据库，表的管理，如 create，drop**
-​	TPL：事物处理语言，包括 begin，transaction，commit，rollback
-​	DCL：数据控制语言，进行授权与权限回收，如 grant，revoke
-​	CCL：指针控制语言，通过控制指针完成表的操作，如 declare cursor
+​	**DQL**：**数据查询语言，select**  
+​	**DML：数据操作语言，insert，update，delete**  
+​	**DDL：数据定义语言，进行数据库，表的管理，如 create，drop**  
+​	TPL：事物处理语言，包括 begin，transaction，commit，rollback  
+​	DCL：数据控制语言，进行授权与权限回收，如 grant，revoke  
+​	CCL：指针控制语言，通过控制指针完成表的操作，如 declare cursor  
 
 >   SQL 语句不区分大小写
 
