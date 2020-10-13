@@ -77,7 +77,7 @@ clear 属性的值可以是 left，right，both 或 none，它表示框的哪些
 
 
 
-![](D:\思维导图\markdown\img\10-13_169.png)
+![132](./10-13_169.png)
 
 
 
