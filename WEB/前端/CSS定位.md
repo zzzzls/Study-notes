@@ -38,7 +38,12 @@ overflow: scroll hidden;
 overflow-x: scroll;
 
 # 设置 垂直滚动条
-overflow-y: hidden;
+overflow-y: scroll;
+
+# 自适应设置滚动条
+# 宽度溢出则水平设置滚动条
+# 高度溢出则垂直设置滚动条
+overflow: auto;
 ```
 
 # float
@@ -68,6 +73,53 @@ overflow-y: hidden;
 
 clear 属性的值可以是 left，right，both 或 none，它表示框的哪些边不应该挨着浮动框！
 
+阻止浮动后会换行，可利用此特性制作聊天对话效果！
+
+
+
+![](D:\思维导图\markdown\img\10-13_169.png)
+
+
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .outer{
+                width: 500px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .other{
+                clear: both;
+                float: left;
+            }
+            .me{
+                clear: both;
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="other">在吗</div>
+            <div class="me">在</div>
+            <div class="other">阿巴阿巴</div>
+            <div class="me">嗯嗯</div>
+            <div class="other">阿巴阿巴阿巴阿巴</div>
+            <div class="me">好的</div>
+        </div>
+    </body>
+</html>
+```
+
+
+
 ## 父元素占据空间
 
 因为浮动元素脱离了文档流，所以包围的图片和文本的 div 不占据空间
@@ -79,6 +131,12 @@ clear 属性的值可以是 left，right，both 或 none，它表示框的哪些
 此时，为父元素设置如下属性即可：
 
 ```css
+父元素{
+    overflow: hidden;
+}
+
+#或者
+
 父元素:after{
             content: "";
             display: table;
