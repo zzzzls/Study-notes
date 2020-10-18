@@ -125,6 +125,7 @@ div {
 |border-top|	设置元素上边框|
 |border-radius|设置边框圆角|
 |box-shadow|设置边框阴影|
+|box-sizing|border-box , 设置边框不修改元素大小，改为占据元素内部空间|
 
 ## 图片属性
 
