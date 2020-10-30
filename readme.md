@@ -11,7 +11,9 @@
 
 - ### 第三方库
 
-  - #### :game_die: [PyGame]
+  - #### :game_die: [PyGame][PyGame]
+  
+  - #### [Faker][Faker]
 
 [python]:./python/readme.md
 [web]:./WEB/readme.md
@@ -19,6 +21,7 @@
 [AI]:./AI/readme.md
 [next]:./
 [PyGame]:./第三方库/PyGame/readme.md
+[Faker]:./第三方库/faker.md
 
 
 
