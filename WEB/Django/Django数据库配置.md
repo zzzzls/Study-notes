@@ -60,6 +60,15 @@ DATABASES = {
 }
 ```
 
+(3) 在 APP 的`__init__.py`文件中写入如下代码
+
+```python
+import pymysql
+pymysql.install_as_MySQLdb()
+```
+
+
+
 ### 使用 Mysql 数据库常见错误
 
 **(1) `django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module`**
