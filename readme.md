@@ -13,7 +13,7 @@
 
   - #### [PyGame][PyGame]
   
-  - ####[Socket][socket]
+  - #### [Socket][socket]
   
   - #### [Faker][Faker]
 
