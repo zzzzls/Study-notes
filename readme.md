@@ -9,9 +9,11 @@
 
 - ### :cloud: [AI 阶段][AI]
 
-- ### 第三方库
+- ### 其它库
 
-  - #### :game_die: [PyGame][PyGame]
+  - #### [PyGame][PyGame]
+  
+  - ####[Socket][socket]
   
   - #### [Faker][Faker]
 
@@ -19,8 +21,8 @@
 [web]:./WEB/readme.md
 [Spider]:./爬虫/readme.md
 [AI]:./AI/readme.md
-[next]:./
 [PyGame]:./第三方库/PyGame/readme.md
+[socket]: ./第三方库/socket.md
 [Faker]:./第三方库/faker.md
 
 
