@@ -44,7 +44,7 @@ class MiddleWareDemo(MiddlewareMixin):
         pass
     def process_view(self):
         pass
-    def process_exceotion(self):
+    def process_exception(self):
         pass
     def process_response(self):
         pass
