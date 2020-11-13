@@ -46,9 +46,11 @@
 - [Django Form表单类][@3.0]
 - [Django cookie & session][@3.1]
 - [前后端分离][@3.2]
-- [简单接口开发][@3.3]
 - [Vue][@3.4]
-- [Django 接口开发][@3.5]
+- [RESTful API 简介][@3.3]
+- [Django FBV 和 CBV][@3.5]
+- [Django 类视图简介][@3.5.1]
+- [Django 内置类视图][@3.5.2]
 - [Django Rest Framework 框架][@3.6]
 - [Django 子路由、子模板、子静态][@3.7]
 - [Django 中间件][@3.8]
@@ -107,6 +109,8 @@
 [@3.3]:./Django/简单接口开发.md
 [@3.4]:./Django/Vue.md
 [@3.5]:./Django/Django接口开发.md
+[@3.5.1]:./Django/Django基于类的视图.md
+[@3.5.2]:./Django/DJango常见基于类的视图.md
 [@3.6]:./Django/DjangoRestFramework.md
 [@3.7]:./Django/Django子路由,子模板,子静态.md
 [@3.8]:./Django/Django中间件.md
