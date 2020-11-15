@@ -7,7 +7,7 @@
         - [内置校验器](#%E5%86%85%E7%BD%AE%E6%A0%A1%E9%AA%8C%E5%99%A8)
         - [界面展示错误信息](#%E7%95%8C%E9%9D%A2%E5%B1%95%E7%A4%BA%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF)
         - [自定义校验](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%A1%E9%AA%8C)
-        - [自定义 Field][#自定义Field]
+        - [自定义 Field]
 - [参考](#%E5%8F%82%E8%80%83)
 
 <!-- /TOC -->
@@ -188,7 +188,7 @@ password = forms.CharField(
 
 -   **validate**
 
-    用于自定义校验规则，接收上一步中转换后的值，并在校验失败时返回 `ValidationError`，这个方法不反悔任何东西，也不应该改变值
+    用于自定义校验规则，接收上一步中转换后的值，并在校验失败时返回 `ValidationError`，这个方法不返回任何东西，也不应该改变值
 
 
 
@@ -196,13 +196,13 @@ password = forms.CharField(
 
     该方法返回校验过后干净的数据，并将其插入到 Form 的 `cleaned_data` 字典中
 
-    由于在调用 `clean()` 的时候，字段的验证方法已经运行，所有你也可以方法 Form 的错误属性，它包含了所有通过校验各个字段而产生的错误
+    由于在调用 `clean()` 的时候，字段的验证方法已经运行，所有你也可以访问 Form 的错误属性，它包含了所有通过校验各个字段而产生的错误
 
     >   任何由 `Form.clean()` 覆盖引发的错误都不会与任何特定的字段相关联，它们会进入一个特殊的字段 `__all__`，可以通过 `non_field_errors()` 方法来访问。如果你想将错误附加到 Form 的某个字段，你需要调用 `add_error()`
 
 
 
--   **clear_<fieldname>**
+-   **clear_\<fieldname>**
 
     该方法会对指定属性进行特定的清理，与字段类型无关，其中 `<fieldname>` 应被替换为表单字段属性的名称。本方法不传递任何参数，你需要在 `self.cleaner_data` 中查找字段的值，并且记住，此时它将是一个 Python对象，而不是表单中提交的原始字符串，它已经经过了上面的校验
 
@@ -214,27 +214,26 @@ password = forms.CharField(
 
 -   `to_python` & `validate`
 
-```python
-# 创建一个自定义 Form Field , 验证输入是否包含逗号分隔的电子邮件地址的字符串
-from django import forms
-from django.core.exceptions import ValidationError
+    ```python
+    # 创建一个自定义 Form Field , 验证输入是否包含逗号分隔的电子邮件地址的字符串
+    from django import forms
+    from django.core.exceptions import ValidationError
 
-class MultiEmailField(forms.Field):
-    def to_python(self, value):
-        """去除数据两侧的空白字符"""
-        if not value:
-            raise ValidationError('请输入邮箱地址')
-        return value.strip()
+    class MultiEmailField(forms.Field):
+        def to_python(self, value):
+            """去除数据两侧的空白字符"""
+            if not value:
+                raise ValidationError('请输入邮箱地址')
+            return value.strip()
 
-    def validate(self, value):
-        super().validate(value)
-        if not '@' in value:
-            raise ValidationError('错误的邮箱地址')
-            
-            
-class LoginForm(forms.Form):
-    email = MultiEmailField()
-```
+        def validate(self, value):
+            super().validate(value)
+            if not '@' in value:
+                raise ValidationError('错误的邮箱地址')
+                
+    class LoginForm(forms.Form):
+        email = MultiEmailField()
+    ```
 
 
 
